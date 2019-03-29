@@ -1,8 +1,8 @@
-#include "../src/model/blocks.hpp"
+#include "../src/model/chunk.hpp"
 
 int main(int argc, char const *argv[])
 {
-    Block* block = new DirtBlock(std::tuple<int, int, int>(1,1,1));
-    delete block;
+    Chunk chunk(Biom::FOREST);
+    chunk.generate_blocks(0);
     return 0;
 }
