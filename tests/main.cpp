@@ -1,8 +1,8 @@
-#include "../src/model/world.hpp"
+#include "../src/model/game.hpp"
 
 int main(int argc, char const *argv[])
 {
-    World world(0, "World");
-    world.generate_chunks();
+    Game game;
+    game.generate_world(0, "World");
     return 0;
 }
